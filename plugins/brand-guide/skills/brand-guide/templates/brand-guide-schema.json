@@ -1,0 +1,194 @@
+{
+  "$schema": "Brand Guide Schema v1",
+  "$description": "Machine-readable brand guide for enforcing visual consistency in frontend development. Every field informs CSS custom properties and design decisions.",
+
+  "brand": {
+    "name": "string — Brand name",
+    "personality": ["string — 3-5 adjectives describing the brand character"],
+    "tone": "string — One sentence describing the brand's voice and feel",
+    "audience": "string — Who the brand serves"
+  },
+
+  "colors": {
+    "primary": {
+      "base": "#hex — Main brand color",
+      "light": "#hex — Lighter variant (hover states, backgrounds)",
+      "dark": "#hex — Darker variant (active states, emphasis)",
+      "contrast": "#hex — Text color to use ON primary backgrounds"
+    },
+    "secondary": {
+      "base": "#hex",
+      "light": "#hex",
+      "dark": "#hex",
+      "contrast": "#hex"
+    },
+    "accent": {
+      "base": "#hex — Optional pop color for highlights and CTAs"
+    },
+    "neutral": {
+      "50": "#hex — Lightest (backgrounds)",
+      "100": "#hex",
+      "200": "#hex",
+      "300": "#hex",
+      "400": "#hex",
+      "500": "#hex — Mid-tone",
+      "600": "#hex",
+      "700": "#hex",
+      "800": "#hex",
+      "900": "#hex",
+      "950": "#hex — Darkest (near-black)"
+    },
+    "semantic": {
+      "success": "#hex",
+      "warning": "#hex",
+      "error": "#hex",
+      "info": "#hex"
+    },
+    "background": {
+      "primary": "#hex — Main page background",
+      "secondary": "#hex — Cards, surfaces",
+      "tertiary": "#hex — Subtle section backgrounds"
+    },
+    "text": {
+      "primary": "#hex — Headings and body text",
+      "secondary": "#hex — Muted/supporting text",
+      "tertiary": "#hex — Subtle text, placeholders",
+      "inverse": "#hex — Text on dark backgrounds"
+    },
+    "border": {
+      "default": "#hex — Standard borders",
+      "strong": "#hex — Emphasized borders",
+      "subtle": "#hex — Light dividers"
+    }
+  },
+
+  "typography": {
+    "headingFont": "string — Google Fonts name for headings",
+    "bodyFont": "string — Google Fonts name for body text",
+    "monoFont": "string — Google Fonts name for code/mono text",
+    "scale": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem"
+    },
+    "lineHeights": {
+      "tight": "number — e.g. 1.25 (headings)",
+      "normal": "number — e.g. 1.5 (body)",
+      "relaxed": "number — e.g. 1.75 (spacious)"
+    },
+    "weights": {
+      "regular": "number — e.g. 400",
+      "medium": "number — e.g. 500",
+      "semibold": "number — e.g. 600",
+      "bold": "number — e.g. 700"
+    },
+    "letterSpacing": {
+      "tight": "string — e.g. -0.025em (headings)",
+      "normal": "string — e.g. 0 (body)",
+      "wide": "string — e.g. 0.05em (uppercase labels)"
+    }
+  },
+
+  "spacing": {
+    "unit": "string — Base unit, typically 0.25rem (4px)",
+    "scale": {
+      "0": "0",
+      "px": "1px",
+      "0.5": "0.125rem",
+      "1": "0.25rem",
+      "2": "0.5rem",
+      "3": "0.75rem",
+      "4": "1rem",
+      "5": "1.25rem",
+      "6": "1.5rem",
+      "8": "2rem",
+      "10": "2.5rem",
+      "12": "3rem",
+      "16": "4rem",
+      "20": "5rem",
+      "24": "6rem"
+    },
+    "containerMax": "string — e.g. 1280px",
+    "contentMax": "string — e.g. 65ch (readable width)"
+  },
+
+  "borders": {
+    "radius": {
+      "none": "0",
+      "sm": "string — e.g. 4px",
+      "md": "string — e.g. 8px",
+      "lg": "string — e.g. 16px",
+      "xl": "string — e.g. 24px",
+      "full": "9999px"
+    },
+    "shadows": {
+      "sm": "string — CSS box-shadow value",
+      "md": "string",
+      "lg": "string",
+      "xl": "string",
+      "inner": "string — inset shadow",
+      "none": "none"
+    },
+    "width": "string — Default border width, e.g. 1px",
+    "style": "string — Default border style, e.g. solid"
+  },
+
+  "motion": {
+    "philosophy": "string — e.g. 'subtle and purposeful'",
+    "durations": {
+      "fast": "string — e.g. 100ms",
+      "normal": "string — e.g. 200ms",
+      "slow": "string — e.g. 400ms"
+    },
+    "easings": {
+      "default": "string — CSS timing function",
+      "enter": "string",
+      "exit": "string"
+    },
+    "reduceMotion": true
+  },
+
+  "components": {
+    "buttons": {
+      "borderRadius": "string — token name e.g. 'full' for pills, 'md' for rounded",
+      "primaryStyle": "string — e.g. 'filled with subtle lift on hover'",
+      "secondaryStyle": "string — e.g. 'outlined with fill on hover'",
+      "tertiaryStyle": "string — e.g. 'ghost/text only'",
+      "textTransform": "string — 'none', 'uppercase', 'capitalize'",
+      "fontWeight": "string — token name e.g. 'semibold'",
+      "sizes": {
+        "sm": { "padding": "string", "fontSize": "string" },
+        "md": { "padding": "string", "fontSize": "string" },
+        "lg": { "padding": "string", "fontSize": "string" }
+      }
+    },
+    "cards": {
+      "borderRadius": "string — token name",
+      "shadow": "string — token name or 'none'",
+      "border": "boolean — whether cards have a border",
+      "background": "string — color token name",
+      "hoverEffect": "string — e.g. 'subtle lift', 'border highlight', 'none'"
+    },
+    "inputs": {
+      "style": "string — 'outlined', 'filled', 'underline'",
+      "borderRadius": "string — token name",
+      "focusRing": "string — e.g. 'primary ring', 'border color change'",
+      "errorStyle": "string — e.g. 'red border + error text below'"
+    },
+    "navigation": {
+      "style": "string — description of nav approach",
+      "mobilePattern": "string — 'hamburger', 'bottom-nav', 'slide-out'"
+    }
+  },
+
+  "rules": {
+    "dos": ["string — Explicit things to always do"],
+    "donts": ["string — Explicit things to never do"]
+  }
+}

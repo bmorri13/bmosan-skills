@@ -1,0 +1,5 @@
+{
+  "name": "brand-guide",
+  "description": "Create brand guides interactively and enforce them when building frontends. Three modes: Builder (create a guide), Enforcer (lock frontend output to brand tokens), and Audit (check existing code against your guide).",
+  "version": "1.0.0"
+}

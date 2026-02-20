@@ -1,0 +1,209 @@
+{
+  "brand": {
+    "name": "Meridian",
+    "personality": ["modern", "confident", "warm", "technical", "approachable"],
+    "tone": "Confident and knowledgeable with genuine warmth — like a smart friend who explains things clearly without talking down to you.",
+    "audience": "Developers and technical teams building modern web applications"
+  },
+
+  "colors": {
+    "primary": {
+      "base": "#6366F1",
+      "light": "#818CF8",
+      "dark": "#4F46E5",
+      "contrast": "#FFFFFF"
+    },
+    "secondary": {
+      "base": "#F59E0B",
+      "light": "#FBBF24",
+      "dark": "#D97706",
+      "contrast": "#1C1917"
+    },
+    "accent": {
+      "base": "#06B6D4"
+    },
+    "neutral": {
+      "50": "#FAFAF9",
+      "100": "#F5F5F4",
+      "200": "#E7E5E4",
+      "300": "#D6D3D1",
+      "400": "#A8A29E",
+      "500": "#78716C",
+      "600": "#57534E",
+      "700": "#44403C",
+      "800": "#292524",
+      "900": "#1C1917",
+      "950": "#0C0A09"
+    },
+    "semantic": {
+      "success": "#22C55E",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#3B82F6"
+    },
+    "background": {
+      "primary": "#FAFAF9",
+      "secondary": "#FFFFFF",
+      "tertiary": "#F5F5F4"
+    },
+    "text": {
+      "primary": "#1C1917",
+      "secondary": "#57534E",
+      "tertiary": "#A8A29E",
+      "inverse": "#FAFAF9"
+    },
+    "border": {
+      "default": "#E7E5E4",
+      "strong": "#D6D3D1",
+      "subtle": "#F5F5F4"
+    }
+  },
+
+  "typography": {
+    "headingFont": "Plus Jakarta Sans",
+    "bodyFont": "DM Sans",
+    "monoFont": "JetBrains Mono",
+    "scale": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem"
+    },
+    "lineHeights": {
+      "tight": 1.25,
+      "normal": 1.5,
+      "relaxed": 1.75
+    },
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "letterSpacing": {
+      "tight": "-0.025em",
+      "normal": "0",
+      "wide": "0.05em"
+    }
+  },
+
+  "spacing": {
+    "unit": "0.25rem",
+    "scale": {
+      "0": "0",
+      "px": "1px",
+      "0.5": "0.125rem",
+      "1": "0.25rem",
+      "2": "0.5rem",
+      "3": "0.75rem",
+      "4": "1rem",
+      "5": "1.25rem",
+      "6": "1.5rem",
+      "8": "2rem",
+      "10": "2.5rem",
+      "12": "3rem",
+      "16": "4rem",
+      "20": "5rem",
+      "24": "6rem"
+    },
+    "containerMax": "1280px",
+    "contentMax": "65ch"
+  },
+
+  "borders": {
+    "radius": {
+      "none": "0",
+      "sm": "4px",
+      "md": "8px",
+      "lg": "16px",
+      "xl": "24px",
+      "full": "9999px"
+    },
+    "shadows": {
+      "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "md": "0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05)",
+      "lg": "0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05)",
+      "xl": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05)",
+      "inner": "inset 0 2px 4px 0 rgba(0, 0, 0, 0.05)",
+      "none": "none"
+    },
+    "width": "1px",
+    "style": "solid"
+  },
+
+  "motion": {
+    "philosophy": "Subtle and purposeful. Animations should guide attention and confirm actions, never distract or delay. Every transition earns its place.",
+    "durations": {
+      "fast": "100ms",
+      "normal": "200ms",
+      "slow": "400ms"
+    },
+    "easings": {
+      "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "enter": "cubic-bezier(0, 0, 0.2, 1)",
+      "exit": "cubic-bezier(0.4, 0, 1, 1)"
+    },
+    "reduceMotion": true
+  },
+
+  "components": {
+    "buttons": {
+      "borderRadius": "md",
+      "primaryStyle": "Filled with primary color, subtle shadow, lifts slightly on hover with enhanced shadow",
+      "secondaryStyle": "Outlined with primary border, transparent background, fills with primary-light on hover",
+      "tertiaryStyle": "No border or background, primary text color, subtle background on hover",
+      "textTransform": "none",
+      "fontWeight": "semibold",
+      "sizes": {
+        "sm": { "padding": "space-1.5 space-3", "fontSize": "sm" },
+        "md": { "padding": "space-2 space-4", "fontSize": "sm" },
+        "lg": { "padding": "space-3 space-6", "fontSize": "base" }
+      }
+    },
+    "cards": {
+      "borderRadius": "lg",
+      "shadow": "sm",
+      "border": true,
+      "background": "secondary",
+      "hoverEffect": "Lift with shadow-md transition, border becomes slightly more visible"
+    },
+    "inputs": {
+      "style": "outlined",
+      "borderRadius": "md",
+      "focusRing": "2px ring in primary-light with 2px offset, border changes to primary",
+      "errorStyle": "Border changes to error color, helper text appears below in error color with sm font size"
+    },
+    "navigation": {
+      "style": "Clean top nav with logo left, links center, CTA right. Subtle bottom border. Active link indicated with primary-colored underline.",
+      "mobilePattern": "hamburger"
+    }
+  },
+
+  "rules": {
+    "dos": [
+      "Always use CSS custom properties from the brand tokens, never hardcode values",
+      "Always import brand fonts from Google Fonts",
+      "Use the neutral scale for grays — never use generic gray hex values",
+      "Use semantic colors for status indicators (success/error/warning/info)",
+      "Maintain generous whitespace — when in doubt, add more space",
+      "Use the primary color sparingly for emphasis — it should draw the eye to important actions",
+      "Always respect prefers-reduced-motion",
+      "Use the mono font for any code, technical identifiers, or numeric data"
+    ],
+    "donts": [
+      "Never use pure black (#000000) or pure white (#FFFFFF) — use neutral-950 and neutral-50",
+      "Never use gradients on text",
+      "Never use more than 2 font weights on a single component",
+      "Never use border-radius values larger than lg (16px) except for pills (full)",
+      "Never use animation durations longer than 400ms",
+      "Never auto-play animations or use attention-seeking motion (bounce, shake, pulse)",
+      "Never use the accent color for large filled areas — it's for small highlights only",
+      "Never combine shadows with thick borders on the same element"
+    ]
+  }
+}

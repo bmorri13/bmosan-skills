@@ -1,0 +1,228 @@
+{
+  "brand": {
+    "name": "BMOSAN LABS",
+    "personality": ["precise", "confident", "engineering-minded", "industrial", "restrained"],
+    "tone": "Precise, confident, and engineering-minded. Industrial in aesthetic, technical in tone — but with enough creative edge to never feel corporate. The brand communicates through restraint: tight color palette, bold typography, and no unnecessary ornamentation.",
+    "audience": "Developers, technical teams, enterprise clients, and creative professionals who value precision and results over polish and fluff."
+  },
+
+  "colors": {
+    "primary": {
+      "base": "#1A1A1A",
+      "light": "#2C2C2C",
+      "dark": "#111111",
+      "contrast": "#F2ECE4"
+    },
+    "secondary": {
+      "base": "#D4451A",
+      "light": "#E25A30",
+      "dark": "#B83A15",
+      "contrast": "#FFFFFF"
+    },
+    "accent": {
+      "base": "#D4451A"
+    },
+    "neutral": {
+      "50": "#F7F3ED",
+      "100": "#F2ECE4",
+      "200": "#E8E0D5",
+      "300": "#D4CBC0",
+      "400": "#B0A696",
+      "500": "#8C8272",
+      "600": "#6B6256",
+      "700": "#4A4239",
+      "800": "#2C2C2C",
+      "900": "#1A1A1A",
+      "950": "#111111"
+    },
+    "semantic": {
+      "success": "#3D8C5C",
+      "warning": "#C4781A",
+      "error": "#C43A2B",
+      "info": "#3A6B8C"
+    },
+    "background": {
+      "primary": "#F2ECE4",
+      "secondary": "rgba(255, 255, 255, 0.5)",
+      "tertiary": "#F7F3ED"
+    },
+    "text": {
+      "primary": "#1A1A1A",
+      "secondary": "#6B6256",
+      "tertiary": "#B0A696",
+      "inverse": "#F2ECE4"
+    },
+    "border": {
+      "default": "rgba(0, 0, 0, 0.08)",
+      "strong": "rgba(0, 0, 0, 0.15)",
+      "subtle": "rgba(0, 0, 0, 0.04)"
+    }
+  },
+
+  "typography": {
+    "headingFont": "Barlow Condensed",
+    "bodyFont": "IBM Plex Sans",
+    "monoFont": "IBM Plex Mono",
+    "scale": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem"
+    },
+    "lineHeights": {
+      "tight": 1.05,
+      "normal": 1.6,
+      "relaxed": 1.75
+    },
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 800
+    },
+    "letterSpacing": {
+      "tight": "0.02em",
+      "normal": "0",
+      "wide": "0.15em"
+    }
+  },
+
+  "spacing": {
+    "unit": "0.25rem",
+    "scale": {
+      "0": "0",
+      "px": "1px",
+      "0.5": "0.125rem",
+      "1": "0.25rem",
+      "2": "0.5rem",
+      "3": "0.75rem",
+      "4": "1rem",
+      "5": "1.25rem",
+      "6": "1.5rem",
+      "8": "2rem",
+      "10": "2.5rem",
+      "12": "3rem",
+      "16": "4rem",
+      "20": "5rem",
+      "24": "6rem"
+    },
+    "containerMax": "1100px",
+    "contentMax": "65ch"
+  },
+
+  "borders": {
+    "radius": {
+      "none": "0",
+      "sm": "0",
+      "md": "0",
+      "lg": "0",
+      "xl": "0",
+      "full": "9999px"
+    },
+    "shadows": {
+      "sm": "0 1px 3px rgba(0, 0, 0, 0.04)",
+      "md": "0 4px 12px rgba(0, 0, 0, 0.06)",
+      "lg": "0 8px 24px rgba(0, 0, 0, 0.08)",
+      "xl": "0 16px 40px rgba(0, 0, 0, 0.1)",
+      "inner": "inset 0 2px 4px rgba(0, 0, 0, 0.04)",
+      "none": "none"
+    },
+    "width": "1px",
+    "style": "solid"
+  },
+
+  "motion": {
+    "philosophy": "Minimal and precise. Transitions are near-instant — they confirm actions, they don't perform. No decorative animation, no staggered reveals, no bounce or wobble. If motion is perceptible, it should feel mechanical, not organic.",
+    "durations": {
+      "fast": "80ms",
+      "normal": "150ms",
+      "slow": "250ms"
+    },
+    "easings": {
+      "default": "cubic-bezier(0.2, 0, 0.2, 1)",
+      "enter": "cubic-bezier(0, 0, 0.2, 1)",
+      "exit": "cubic-bezier(0.2, 0, 1, 1)"
+    },
+    "reduceMotion": true
+  },
+
+  "components": {
+    "buttons": {
+      "borderRadius": "none",
+      "primaryStyle": "Black fill, cream text, mono font, uppercase, wide letter-spacing. Hover: background changes to signal orange.",
+      "secondaryStyle": "Transparent background, black 2px border, black mono text. Hover: black fill, cream text.",
+      "tertiaryStyle": "No background, no border. Mono text. Hover: 2px bottom border in signal orange, text color to signal orange.",
+      "textTransform": "uppercase",
+      "fontWeight": "semibold",
+      "sizes": {
+        "sm": { "padding": "space-2 space-4", "fontSize": "xs" },
+        "md": { "padding": "space-3 space-6", "fontSize": "xs" },
+        "lg": { "padding": "space-4 space-8", "fontSize": "sm" }
+      }
+    },
+    "cards": {
+      "borderRadius": "none",
+      "shadow": "none",
+      "border": true,
+      "background": "secondary",
+      "hoverEffect": "Border strengthens from default to strong, faint sm shadow appears"
+    },
+    "inputs": {
+      "style": "outlined",
+      "borderRadius": "none",
+      "focusRing": "2px border changes to primary (black), no ring/glow",
+      "errorStyle": "Border changes to semantic error color, helper text appears below in error color with xs mono font"
+    },
+    "navigation": {
+      "style": "Numbered bracket pattern: [01] SERVICES [02] PROCESS. IBM Plex Mono, uppercase, wide letter-spacing. Logo left, links right. Minimal — no background color, no bottom border unless scrolled.",
+      "mobilePattern": "hamburger"
+    }
+  },
+
+  "signatureElements": {
+    "outlineText": "Hero headings use a mix of filled and outlined (stroke-only) text in Barlow Condensed 800. Outlined text uses -webkit-text-stroke: 2px with transparent fill.",
+    "sectionLabels": "Section labels use // prefix (code-comment style) in IBM Plex Mono, uppercase, signal orange color. Example: // WHAT WE DO",
+    "numberedSequences": "Service items and process steps use zero-padded numbers (001, 002...) or two-digit numbers (01, 02...) in IBM Plex Mono, light neutral color.",
+    "diamondMarkers": "List bullets and separators use a 6px diamond (rotated square) in signal orange instead of standard bullet points.",
+    "gridBackground": "Pages use a subtle graph-paper grid pattern on the cream background using CSS linear-gradient. Grid lines are approximately rgba(180, 170, 155, 0.2) at 40px intervals.",
+    "arrows": "CTAs use → (right arrow) as a suffix, not chevrons or icons."
+  },
+
+  "rules": {
+    "dos": [
+      "Always use CSS custom properties from the brand tokens — never hardcode values",
+      "Always import Barlow Condensed, IBM Plex Sans, and IBM Plex Mono from Google Fonts",
+      "Use the warm neutral scale — never use cool grays",
+      "Use all-caps Barlow Condensed for every heading",
+      "Use IBM Plex Mono for all labels, navigation, prices, and metadata",
+      "Use the // code-comment prefix for section labels",
+      "Use numbered bracket pattern [01] for navigation items",
+      "Use diamond markers (◆ or rotated squares) instead of bullet points",
+      "Use the graph-paper grid background on primary pages",
+      "Use signal orange sparingly — it's punctuation, not paint",
+      "Maintain generous whitespace — when in doubt, add more breathing room",
+      "Use semantic colors that feel warm and muted, consistent with the cream palette",
+      "Always respect prefers-reduced-motion",
+      "Use → for CTA arrows, never chevrons or icon fonts"
+    ],
+    "donts": [
+      "Never use border-radius on buttons, cards, or containers — the brand is sharp and architectural",
+      "Never use pure black (#000000) or pure white (#FFFFFF) — use neutral-900 (#1A1A1A) and cream (#F2ECE4)",
+      "Never use cool-toned grays — all neutrals must be warm (cream-based)",
+      "Never use gradients anywhere — not on backgrounds, text, or UI elements",
+      "Never use more than the three core colors (cream, black, signal orange) plus neutrals and semantics",
+      "Never use sans-serif fonts other than the three specified families",
+      "Never use bouncy, springy, or playful animations — motion must feel mechanical and precise",
+      "Never use animation durations longer than 250ms",
+      "Never use thick shadows or dramatic elevation — depth is subtle at most",
+      "Never use emoji, rounded UI patterns, or anything that softens the industrial aesthetic",
+      "Never use signal orange for large filled areas — it's for small highlights, text emphasis, and markers only",
+      "Never center-align body text — left-align everything except single-line labels where centering is structural"
+    ]
+  }
+}

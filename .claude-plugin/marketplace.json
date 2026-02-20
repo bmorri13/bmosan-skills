@@ -1,0 +1,10 @@
+{
+  "name": "bmosan-skills",
+  "description": "Production-grade skills for frontend development, brand systems, and more by BMOSAN LABS.",
+  "plugins": [
+    {
+      "name": "brand-guide",
+      "path": "plugins/brand-guide"
+    }
+  ]
+}
