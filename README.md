@@ -123,7 +123,7 @@ Then paste the `SKILL.md` contents below the frontmatter. This auto-attaches onl
 
 **Option C: AGENTS.md (cross-tool compatible)**
 
-VS Code also reads `AGENTS.md` from your project root. See the [Cross-Tool Compatibility](#cross-tool-compatibility-agentsmd) section below — the same file works in VS Code, OpenCode, and Codex.
+VS Code also reads `AGENTS.md` from your project root, but this is **experimental and disabled by default** — you must enable `chat.useAgentsMdFile` in VS Code settings first. See the [Cross-Tool Compatibility](#cross-tool-compatibility-agentsmd) section below — the same file works in VS Code, OpenCode, and Codex.
 
 ---
 
@@ -215,6 +215,8 @@ cp -r /tmp/bmosan-skills/plugins/brand-guide/skills/brand-guide/* .agents/skills
 
 Codex auto-discovers the skill based on its description and invokes it when frontend tasks come up. You can also explicitly invoke it with `$brand-guide` in the Codex composer.
 
+> **Note:** Skills may require the `--enable skills` feature flag (e.g., `codex --enable skills`).
+
 **Option C: Global install**
 
 ```bash
@@ -252,7 +254,7 @@ If you have Claude Desktop with skills enabled:
 
 ### Cross-Tool Compatibility (AGENTS.md)
 
-If you use multiple tools, the simplest approach is a single `AGENTS.md` in your project root. This file is read by **VS Code (Copilot)**, **OpenCode**, **Codex CLI**, and (as a fallback) **Claude Code**.
+If you use multiple tools, the simplest approach is a single `AGENTS.md` in your project root. This file is read by **VS Code (Copilot)**, **OpenCode**, and **Codex CLI**.
 
 ```markdown
 # Project AI Instructions
