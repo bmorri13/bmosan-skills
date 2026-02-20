@@ -1,10 +1,18 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "bmosan-skills",
   "description": "Production-grade skills for frontend development, brand systems, and more by BMOSAN LABS.",
+  "owner": {
+    "name": "BMOSAN LABS",
+    "url": "https://bmosan.com"
+  },
   "plugins": [
     {
       "name": "brand-guide",
-      "path": "plugins/brand-guide"
+      "description": "Create brand guides interactively and enforce them when building frontends. Three modes: Builder (create a guide), Enforcer (lock frontend output to brand tokens), and Audit (check existing code against your guide).",
+      "source": "./plugins/brand-guide",
+      "category": "design",
+      "homepage": "https://github.com/bmorri13/bmosan-skills/tree/main/plugins/brand-guide"
     }
   ]
 }
